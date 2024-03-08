@@ -32,15 +32,16 @@ This project is for accurate and efficient prediction of partition coefficient (
 - logp/zq/utils/md/load_prop.py: load props from intermediate files;
 - logp/zq/utils/md/md.py: module for performing vacuum md using OpenMM;
 - logp/zq/utils/md/md_analysis.py: module for MD analysis, such as, RMSD;
-
-
++ Notebooks:
+- 210417_sf_weighted_by_charge_illustration.ipynb: illustrate how to map values of symmetry function onto 2D molecular structures;
+- 210603_MD_OpenMM_ff_generator_Martel.ipynb: illustrate how to perform molecular dynamics input only SMILEs over dataset Martel;
+- 210702_MD_feat_gen2csv_weight_None_Martel.ipynb: illustrate how to extract features from MD simulations over Martel dataset considering entropy or only the most probable structure while ignoring polarization effect;
+- 210702_MD_feat_gen2csv_weight_charge_Martel.ipynb: illustrate how to extract features from MD simulations over Martel dataset considering entropy or only the most probable structure and polarization effect;
+- 210705_sf_MD_ensemble_vs_max_p_illustration.ipynb: visualize the effects of entropy (taking different conformations into consideration) exerted on the symmetry functions;
+- 210922_MD_ave_from_csv_weight_q_pred-learning-rate_1e-[3,4,5].ipynb: illustrate how to train the model and get predicted results with learning rate set to be 1e-3, 1e-4, 1e-5, respectively;
+- 210923_MD_max_from_csv_weight_q_pred-100-100-100.ipynb/210924_MD_max_from_csv_weight_q_pred-75-75-75.ipynb: illustrate how to change the neural network architecture for training and predicting;
+- 211101_logP_per_atom_distribution_over_dataset_star.ipynb: illustrate how to get contribution from per atom and visualize;
 ```
-
-
-
-
-
-
 
 For more details, you could consult this [paper](https://pubs.rsc.org/en/content/articlelanding/2022/CP/D2CP02648A)
 ```
